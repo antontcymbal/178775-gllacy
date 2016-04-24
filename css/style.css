@@ -1,0 +1,13 @@
+body {
+background-color: #849d8f;
+
+}
+
+
+.offer .raspFree {
+  background-image: image(img/rasp_background.png);
+}
+
+.offer .chocoFree {
+  background-image: image(img/choco_background.png);
+}
