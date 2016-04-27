@@ -7,37 +7,72 @@
   </head>
   <body>
     <div class="container">
-     <header class="mainHeader">
-       <img src="img/Logo.svg" alt="logo" width="153" height="63">
+      <header class="mainHeader">
+        <img src="img/logo.svg" alt="logo" width="153" height="63">
 
-       <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="#">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li>
-            <a href="#">О Компании</a>
-          </li>
-        </ul>
-        </nav>
+        <nav class="main-navigation">
+         <ul>
+           <li>
+             <a href="#">Каталог</a>
+           </li>
+           <li>
+             <a href="#">Доставка и оплата</a>
+           </li>
+           <li>
+             <a href="#">О Компании</a>
+           </li>
+         </ul>
+         </nav>
 
-        <div class="userBlock">
-        <a class="search" href="#"><img src="img/search_icon.svg"
-          alt="search_icon" width="17" height="17"></a>
+         <div class="userBlock">
+           <div class="search">
+             <span class="search-icon">Поиск</span>
+             <form action="#" method="get">
+               <input type="search" name="search" placeholder="Что ищем?">
+             </form>
+           </div>
 
-        <a class="login" href="#"><img src="img/entrance_icon.svg"
-          alt="entrance" width="20" height="19">Вход</a>
+           <div class="account">
+             <a class="userBlock-btn" href="#">Вход</a>
+             <form action="#" method="get">
+               <input type="text" name="email" placeholder="Электронная почта">
+               <input type="password" name="password" placeholder="Пароль">
+               <input type="submit" name="submit" value="Войти" id="submit">
+               <label for="submit"><a href="#">Забыли пароль?</a></label>
+               <label for="submit"><a href="#">Новая регистрация</a></label>
+             </form>
+           </div>
 
-        <a class="login" href="#"><img src="img/cart_icon.svg"
-          alt="shopping_cart" width="21" height="20">Пусто</a>
+           <div class="cart">
+             <a class="userBlock-cart" href="#"><img src="img/cart_icon.svg"
+             alt="shopping_cart" width="21" height="20">2 товара</a>
+           </div>
 
-        <p class="openTime">с 10 до 20, ежедневно</p>
-        <p class="phoneNumber">8 812 450-25-25</p>
-        </div>
-     </header>
+           <table>
+             <tr>
+               <td><img src="img/x.png" alt="x" width="10" height="10"></td>
+               <td><img src="img/icecream_orange_small.jpg" alt="" width="33" height="33"></td>
+               <td>Пломбир с апельсиновым джемом</td>
+               <td>1,5 кг x <span class="gray">200 руб.</span></td>
+               <td>300 руб.</td>
+             </tr>
+
+             <tr>
+               <td><img src="img/x.png" alt="x" width="10" height="10"></td>
+               <td><img src="img/icecream_strawberry_small.jpg" alt="" width="33" height="33"></td>
+               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+               <td>1,5 кг x <span class="gray">300 руб.</span></td>
+               <td>450 руб.</td>
+             </tr>
+           </table>
+           <div class="sum"> Итого: 750 руб.</div>
+           <button class="btn"><a href="#">Оформить заказ</a></button>
+
+           <div class="openTimePhone">
+             с 10 до 20, ежедневно<br>
+             <span class="phone">8 812 450-25-25</span>
+           </div>
+      </header>
     </div>
 
     <main class="container">
@@ -45,11 +80,14 @@
         <img src="img/slide1.png" alt="iceCream">
         <p class="slogan">Крем-брюле и пломбир с малиновым джемом</p>
         <a class="giveTwo" href="#">Давайте оба!</a>
-        <div class="slidePoint active">
+        <div>
+          <a class="slidePoint active" href="#">
         </div>
-        <div class="slidePoint">
+        <div>
+          <a class="slidePoint" href="#">
         </div>
-        <div class="slidePoint">
+        <div>
+          <a class="slidePoint" href="#">
         </div>
       </div>
 
@@ -57,7 +95,7 @@
         <p class="raspFree_title">Малинка даром!</p>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш
         заказ банку малинового варенья бесплатно.</p>
-        <a href="#">Хочу варенье!</a>
+        <a href="#"><button class="btn">Хочу варенье!</button></a>
       </section>
 
       <section class="offer chocoFree">
@@ -65,15 +103,15 @@
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
           шоколадной присыпки совершенно бесплатно.
         </p>
-        <a href="#">Хочу шоколадки!</a>
+        <a href="#"><button class="btn">Хочу шоколадки!</button></a>
       </section>
 
       <div class="iceCream">
         <img src="img/icecream_orange.png" alt="creamOrange" width="267px"
         height="267px">
         <img src="img/hit.png" alt="hit" width="61px" height="61px">
-        <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-        <p class="price"> 310    /кг</p>
+        <div class="iceCream-price">310 Р/кг</div>
+        <a href="#" class="iceCream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
       </div>
 
 
@@ -81,24 +119,24 @@
         <img src="img/icecream_coffee.png" alt="creamCoffee" width="267px"
         height="267px">
         <img src="img/hit.png" alt="hit" width="61px" height="61px">
-        <p>Сливочно-кофейное с кусочками шоколада</p>
-        <p class="price"> 380    /кг</p>
+        <div class="iceCream-price">380 Р/кг</div>
+        <a href="#" class="iceCream-title">Сливочно-кофейное с кусочками шоколада</a>
       </div>
 
       <div class="iceCream">
         <img src="img/icecream_strawberry.png" alt="creamStrawberry" width="267px"
         height="267px">
         <img src="img/hit.png" alt="hit" width="61px" height="61px">
-        <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-        <p class="price"> 355    /кг</p>
+        <div class="iceCream-price">355 Р/кг</div>
+        <a href="#" class="iceCream-title">Сливочно-клубничное с присыпкой из белого шоколада</a>
       </div>
 
       <div class="iceCream">
         <img src="img/icecream_caramel.png" alt="creamBrulle" width="267px"
         height="267px">
         <img src="img/hit.png" alt="hit" width="61px" height="61px">
-        <p>Сливочное крем-брюле с карамельной подливкой</p>
-        <p class="price"> 415    /кг</p>
+        <div class="iceCream-price">415 Р/кг</div>
+        <a href="#" class="iceCream-title">Сливочное крем-брюле с карамельной подливкой</a>
       </div>
 
       <section class="compAdvantages">
@@ -139,7 +177,7 @@
       <div class="blog">
 
         <h2>Новое в нашем блоге</h2>
-        <p>10  способов сервировки фруктовых щербетов к столу</p>
+        <a href="#" class="blogTitle">10  способов сервировки фруктовых щербетов к столу</a>
 
       </div>
 
@@ -148,10 +186,12 @@
           всего самого вкусного, что у нас происходит. Обещаем не спамить и
           не слать всякой не нужной ерунды. Честно =) </p>
 
-          <input id="e-mail" type="text" name="e-mail"
+          <form>
+            <input id="e-mail" type="text" name="e-mail"
           value="Электронная почта">
 
-          <input id="submit" type="submit" name="submit" value="Отправить">
+            <input id="submit" type="submit" name="submit" value="Отправить">
+          </form>
       </div>
 
       <section class="contacts">
@@ -175,28 +215,32 @@
 
     <footer class="mainFooter">
       <div class="container">
-        <img src="img/twitter_icon.svg" alt="twitter_icon" width="31" height="31">
-        <img src="img/insta_icon.svg" alt="insta_icon" width="31" height="31">
-        <img src="img/fb_icon.svg" alt="fb_icon" width="31" height="31">
-        <img src="img/vk_icon.svg" alt="vk_icon" width="31" height="31">
+
+        <a href="#" class="social-btn social-btn-twitter">
+          <img src="img/twitter_icon.svg" alt="twitter_icon" width="31" height="31"></a>
+        <a href="#" class="social-btn social-btn-insta">
+          <img src="img/insta_icon.svg" alt="insta_icon" width="31" height="31"></a>
+        <a href="#" class="social-btn social-btn-fb">
+          <img src="img/fb_icon.svg" alt="fb_icon" width="31" height="31"></a>
+        <a href="#" class="social-btn social-btn-vk">
+          <img src="img/vk_icon.svg" alt="vk_icon" width="31" height="31"></a>
+
 
         <div class="links">
-        <img src="img/heart_icon.svg" alt="heart_icon" width="15" height="13">
-        <a href="#">Для поставщиков</a>
-        <a href="#">О производстве</a>
-        <a href="#">Наши документы</a>
-        <a href="#">Экологические стандарты</a>
+          <a href="#">Для поставщиков</a>
+          <a href="#">О производстве</a>
+          <a href="#">Наши документы</a>
+          <a href="#">Экологические стандарты</a>
         </div>
 
-        <div class="signature">
-        <img src="img/htmlacademy_logo.svg" alt="academy_logo" width="108"
-        height="37">
-        <p>Сделано в HTML Academy © 2016</p>
+        <div class="copyright">
+          <a href="#"><img src="img/htmlacademy_logo.svg" alt="academy_logo" width="108"
+        height="37"></a>
+          <a href="#"><span class="underline">Сделано в HTML Academy</span> © 2016</p></a>
         </div>
 
       </div>
     </footer>
-
 
   </body>
 </html>
