@@ -23,3 +23,128 @@ font-weight: 500;
 font-family: "Roboto", Arial, sans-serif;
 
 }
+
+
+.container {
+    width: 1146px;
+    margin: 0 auto;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mainLogo {
+    float: left;
+    width: 179px;
+}
+
+.mainNavigation {
+    float: left;
+    width: 700px;
+}
+
+
+.userBlock {
+    float: right;
+    width: 267px;
+}
+
+.userBlock .search {
+    float:left;
+}
+
+.userBlock .account {
+    float:left;
+}
+
+.userBlock .userBlockCart {
+    float:left;
+}
+
+.offer {
+    min-height: 230px;
+}
+
+.raspFree {
+    width: 560px;
+    heigth: 230px;
+    float: left;
+    margin-bottom: 40px;
+
+}
+
+.chocoFree {
+    width: 560px;
+    heigth: 230px;
+    float: right;
+    margin-bottom: 40px;
+
+}
+
+.iceCreamHits {
+    min-height: 330px;
+    margin-bottom: 40px;
+}
+
+.iceCream {
+    width: 267px;
+    margin-right: 26px;
+    float: left;
+    
+}
+
+.iceCream.hitFour {
+    float:right;
+    margin-right: 0px;
+}
+
+.compAdvantages {
+    min-height: 307px;
+}
+
+
+
+
+/* Hovers */
+
+.mainNavigation .menu > li {
+    display: inline;
+    margin-right: 30px;
+    list-style: none;
+}
+
+.menu .dropdown {
+    display: none;
+}
+
+.menu > li:hover .dropdown {
+    display: inline;
+}
+
+.userBlock .searchHover {
+    display: none;
+}
+
+.userBlock .search:hover .searchHover {
+    display: block;
+}
+
+.account .enterHover{
+    display: none;
+}
+
+.account .userBockBtn:hover .enterHover {
+    display: block;
+}
+
+.cart .orderHover {
+    display: none;
+}
+
+.cart .userBlockCart:hover .orderHover {
+    display:block;
+}

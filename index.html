@@ -8,10 +8,13 @@
     <body>
         <div class="container">
             <header class="mainHeader">
-                <img src="img/logo.svg" alt="logo" width="153" height="63">
+            <div class="container clearfix">
+                <div class="mainLogo">
+                    <img src="img/logo.svg" alt="logo" width="153" height="63">
+                </div>
 
                 <nav class="mainNavigation">
-                    <ul>
+                    <ul class="menu">
                         <li>
                             <a href="#">Каталог</a>
                                 <ul class="dropdown">
@@ -35,7 +38,7 @@
                                         <a href="#">Мелорин</a>
                                     </li>
                                 </ul>
-                            </li>
+                        </li>
                         <li>
                             <a href="#">Доставка и оплата</a>
                         </li>
@@ -47,55 +50,59 @@
 
                 <div class="userBlock">
                     <div class="search">
-                        <span class="searchIcon">Поиск</span>
-                        <form action="#" method="get">
+                        <img class="searchIcon" src="img/search_icon.svg" alt="Поиск" width="17" height="17">
+                        <span class="searchIconText"></span>
+                        <form class="searchHover" action="#" method="get">
                             <input type="search" name="search" placeholder="Что ищем?">
                         </form>
                     </div>
-                </div>
 
-                <div class="account">
-                    <a class="userBlockBtn" href="#">Вход</a>
-                    <form action="#" method="get">
-                        <input type="text" name="email" placeholder="Электронная почта">
-                        <input type="password" name="password" placeholder="Пароль">
-                        <input type="submit" name="submit" value="Войти" id="submit">
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
-                    </form>
-                </div>
-
-
-                <div class="cart">
-                    <a class="userBlockCart" href="#">
-                        <img src="img/cart_icon.svg" alt="shopping_cart" width="21" height="20">2 товара
-                    </a>
-                </div>
-
-                <table>
-                    <tr>
-                        <td><img src="img/x.png" alt="x" width="10" height="10"></td>
-                        <td><img src="img/icecream_orange_small.jpg" alt="" width="33" height="33"></td>
-                        <td>Пломбир с апельсиновым джемом</td>
-                        <td>1,5 кг x <span class="gray">200 руб.</span></td>
-                        <td>300 руб.</td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="img/x.png" alt="x" width="10" height="10"></td>
-                        <td><img src="img/icecream_strawberry_small.jpg" alt="" width="33" height="33"></td>
-                        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                        <td>1,5 кг x <span class="gray">300 руб.</span></td>
-                        <td>450 руб.</td>
-                    </tr>
-                </table>
-                    <div class="sum"> Итого: 750 руб.</div>
-                    <button class="btn"><a href="#">Оформить заказ</a></button>
-
-                    <div class="openTimePhone">с 10 до 20, ежедневно<br>
-                        <span class="phone">8 812 450-25-25</span>
+                    <div class="account">
+                        <a class="userBlockBtn" href="#">Вход</a>
+                        <form class="enterHover" action="#" method="get">
+                            <input type="text" name="email" placeholder="Электронная почта">
+                            <input type="password" name="password" placeholder="Пароль">
+                            <input type="submit" name="submit" value="Войти" id="submit">
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                        </form>
                     </div>
-            </header>
+
+
+                    <div class="cart">
+                        <a class="userBlockCart" href="#">
+                            <img src="img/cart_icon.svg" alt="shopping_cart" width="21" height="20">2 товара
+                        </a>
+
+                        <div class="orderHover">
+                            <table>
+                                <tr>
+                                    <td><img src="img/x.png" alt="x" width="10" height="10"></td>
+                                    <td><img src="img/icecream_orange_small.jpg" alt="" width="33" height="33"></td>
+                                    <td>Пломбир с апельсиновым джемом</td>
+                                    <td>1,5 кг x <span class="gray">200 руб.</span></td>
+                                    <td>300 руб.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><img src="img/x.png" alt="x" width="10" height="10"></td>
+                                    <td><img src="img/icecream_strawberry_small.jpg" alt="" width="33" height="33"></td>
+                                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                                    <td>1,5 кг x <span class="gray">300 руб.</span></td>
+                                    <td>450 руб.</td>
+                                </tr>
+                            </table>
+                            <div class="sum"> Итого: 750 руб.</div>
+                            <button class="btn"><a href="#">Оформить заказ</a></button>
+                        </div>
+
+                        <div class="openTimePhone">с 10 до 20, ежедневно<br>
+                            <span class="phone">8 812 450-25-25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         </div>
 
         <main class="container">
@@ -120,45 +127,44 @@
 
 
                 <div>
-                    <a class="slidePoint active" href="#">
+                    <a class="slidePoint active" href="#"></a>
                 </div>
                 <div>
-                    <a class="slidePoint" href="#">
+                    <a class="slidePoint" href="#"></a>
                 </div>
                 <div>
-                    <a class="slidePoint" href="#">
+                    <a class="slidePoint" href="#"></a>
                 </div>
             </div>
 
-            <div class="offer">
+            <div class="offer clearfix">
                 <section class="raspFree">
                     <p class="raspFree_title">Малинка даром!</p>
-                    <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш
-                    заказ банку малинового варенья бесплатно.</p>
+                    <p>При покупке 2 кг любого фруктового мороженого, добавим <br>
+                    в ваш заказ банку малинового варенья бесплатно.</p>
                     <a href="#" сlass="btn">Хочу варенье!</a>
                 </section>
 
                 <section class="chocoFree">
                     <p class="chocoFree_title">Шоколадки даром!</p>
-                    <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
-                      шоколадной присыпки совершенно бесплатно.
-                    </p>
+                    <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
+                    вкуснейшейшоколадной присыпки совершенно бесплатно.</p>
                     <a href="#" class="btn">Хочу шоколадки!</a>
                 </section>
             </div>
 
-            <div class="iceCreamHits"
+            <div class="iceCreamHits clearfix"
 
-                <div class="iceCream">
+                <div class="iceCream hitOne">
                     <a href="#"><img src="img/icecream_orange.png" alt="creamOrange" width="267px"
                     height="267px"></a>
-                    <img src="img/hit.png" alt="hit" width="61px" height="61px">
+
                     <div class="iceCreamPrice">310 Р/кг</div>
-                    <a href="#" class="iceCreamTitle">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    <a href="#" class="iceCreamTitle">Сливочное с апельсиновым<br> джемом и цитрусовой стружкой</a>
                 </div>
 
 
-                <div class="iceCream">
+                <div class="iceCream hitTwo">
                     <a href="#"><img src="img/icecream_coffee.png" alt="creamCoffee" width="267px"
                     height="267px"></a>
                     <img src="img/hit.png" alt="hit" width="61px" height="61px">
@@ -166,7 +172,7 @@
                     <a href="#" class="iceCreamTitle">Сливочно-кофейное с кусочками шоколада</a>
                 </div>
 
-                <div class="iceCream">
+                <div class="iceCream hitThree">
                     <a href="#"><img src="img/icecream_strawberry.png" alt="creamStrawberry" width="267px"
                     height="267px"></a>
                     <img src="img/hit.png" alt="hit" width="61px" height="61px">
@@ -174,7 +180,7 @@
                     <a href="#" class="iceCreamTitle">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </div>
 
-                <div class="iceCream">
+                <div class="iceCream hitFour">
                     <a href="#"><img src="img/icecream_caramel.png" alt="creamBrulle" width="267px"
                     height="267px"></a>
                     <img src="img/hit.png" alt="hit" width="61px" height="61px">
@@ -183,7 +189,7 @@
                 </div>
             </div>
 
-            <section class="compAdvantages">
+            <section class="compAdvantages clearfix">
 
                 <h2> Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на
                     развес</h2>
@@ -248,9 +254,10 @@
                     <input type="text" name="contactForm" id="email" value="Ваша почта для ответа?">
                     <input type="text" name="contactForm" id="message" value="Напишите что-нибудь?">
                     <input type="submit" name="contactForm" id="submit" value="Отправить">
+
                 </form>
 
-            </section>
+          </section>
 
         </main>
 

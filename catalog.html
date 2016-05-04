@@ -7,12 +7,14 @@
     </head>
 
     <body>
-        <div class="container">
-            <header class="mainHeader">
-                <img src="img/logo.svg" alt="logo" width="153" height="63">
+        <header class="mainHeader">
+            <div class="container clearfix">
+                <div class="mainLogo">
+                    <img src="img/logo.svg" alt="logo" width="153" height="63">
+                </div>
 
                 <nav class="mainNavigation">
-                    <ul>
+                    <ul class="menu">
                         <li>
                             <a href="#">Каталог</a>
                                 <ul class="dropdown">
@@ -36,7 +38,7 @@
                                         <a href="#">Мелорин</a>
                                     </li>
                                 </ul>
-                            </li>
+                        </li>
                         <li>
                             <a href="#">Доставка и оплата</a>
                         </li>
@@ -48,56 +50,60 @@
 
                 <div class="userBlock">
                     <div class="search">
-                        <span class="searchIcon">Поиск</span>
-                        <form action="#" method="get">
+                        <img class="searchIcon" src="img/search_icon.svg" alt="Поиск" width="17" height="17">
+                        <span class="searchIconText"></span>
+                        <form class="searchHover" action="#" method="get">
                             <input type="search" name="search" placeholder="Что ищем?">
                         </form>
                     </div>
-                </div>
 
-                <div class="account">
-                    <a class="userBlockBtn" href="#">Вход</a>
-                    <form action="#" method="get">
-                        <input type="text" name="email" placeholder="Электронная почта">
-                        <input type="password" name="password" placeholder="Пароль">
-                        <input type="submit" name="submit" value="Войти" id="submit">
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
-                    </form>
-                </div>
-
-
-                <div class="cart">
-                    <a class="userBlockCart" href="#">
-                        <img src="img/cart_icon.svg" alt="shopping_cart" width="21" height="20">2 товара
-                    </a>
-                </div>
-
-                <table>
-                    <tr>
-                        <td><img src="img/x.png" alt="x" width="10" height="10"></td>
-                        <td><img src="img/icecream_orange_small.jpg" alt="" width="33" height="33"></td>
-                        <td>Пломбир с апельсиновым джемом</td>
-                        <td>1,5 кг x <span class="gray">200 руб.</span></td>
-                        <td>300 руб.</td>
-                    </tr>
-
-                    <tr>
-                        <td><img src="img/x.png" alt="x" width="10" height="10"></td>
-                        <td><img src="img/icecream_strawberry_small.jpg" alt="" width="33" height="33"></td>
-                        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                        <td>1,5 кг x <span class="gray">300 руб.</span></td>
-                        <td>450 руб.</td>
-                    </tr>
-                </table>
-                    <div class="sum"> Итого: 750 руб.</div>
-                    <button class="btn"><a href="#">Оформить заказ</a></button>
-
-                    <div class="openTimePhone">с 10 до 20, ежедневно<br>
-                        <span class="phone">8 812 450-25-25</span>
+                    <div class="account">
+                        <a class="userBlockBtn" href="#">Вход</a>
+                        <form class="enterHover" action="#" method="get">
+                            <input type="text" name="email" placeholder="Электронная почта">
+                            <input type="password" name="password" placeholder="Пароль">
+                            <input type="submit" name="submit" value="Войти" id="submit">
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                        </form>
                     </div>
-            </header>
-        </div>
+
+
+                    <div class="cart">
+                        <a class="userBlockCart" href="#">
+                            <img src="img/cart_icon.svg" alt="shopping_cart" width="21" height="20">2 товара
+                        </a>
+
+                        <div class="orderHover">
+                            <table>
+                                <tr>
+                                    <td><img src="img/x.png" alt="x" width="10" height="10"></td>
+                                    <td><img src="img/icecream_orange_small.jpg" alt="" width="33" height="33"></td>
+                                    <td>Пломбир с апельсиновым джемом</td>
+                                    <td>1,5 кг x <span class="gray">200 руб.</span></td>
+                                    <td>300 руб.</td>
+                                </tr>
+
+                                <tr>
+                                    <td><img src="img/x.png" alt="x" width="10" height="10"></td>
+                                    <td><img src="img/icecream_strawberry_small.jpg" alt="" width="33" height="33"></td>
+                                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                                    <td>1,5 кг x <span class="gray">300 руб.</span></td>
+                                    <td>450 руб.</td>
+                                </tr>
+                            </table>
+                            <div class="sum"> Итого: 750 руб.</div>
+                            <button class="btn"><a href="#">Оформить заказ</a></button>
+                        </div>
+
+                        <div class="openTimePhone">с 10 до 20, ежедневно<br>
+                            <span class="phone">8 812 450-25-25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
 
         <main class="container">
             <ul class="breadcrumbs">
