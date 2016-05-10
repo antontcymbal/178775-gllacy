@@ -1,34 +1,31 @@
 body {
-background-color: #849d8f;
-font-size: 16px;
-line-height: 22px;
-color: #ffffff;
-font-weight: 500;
-font-family: "Roboto", Arial, sans-serif;
+    background-color: #849d8f;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
 }
 
 h1 {
-font-size: 35px;
-line-height: 41px;
-color: #ffffff;
-font-weight: bold;
-font-family: "Roboto", Arial, sans-serif;
+    font-size: 35px;
+    line-height: 41px;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 h2 {
-font-size: 24px;
-line-height: 30px;
-color: #000000;
-font-weight: 500;
-font-family: "Roboto", Arial, sans-serif;
-
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
 }
 
 
 .container {
     width: 1146px;
     margin: 0 auto;
-
 }
 
 .clearfix::after {
@@ -47,33 +44,103 @@ font-family: "Roboto", Arial, sans-serif;
     width: 700px;
 }
 
-
 .userBlock {
     float: right;
     width: 267px;
 }
 
-.userBlock .search {
-    float:left;
+    .search {
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        margin-right: 10px;
+
+    }
+
+    .account {
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    .cart {
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+    }
+
+.openTimePhone {
+    text-align: right;
 }
 
-.userBlock .account {
-    float:left;
+.filterSort {
+    width: 195px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+
 }
 
-.userBlock .userBlockCart {
-    float:left;
+.filterPrice {
+    width: 220px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.filterFat {
+    width: 420px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.filterFat input {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.filterFillings {
+    width: 705px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 40px;
+}
+
+.filterFillings input {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.filterBtn {
+    width: 145px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 40px;
+}
+
+
+
+.slide2 {
+    display: none;
+}
+
+.slide3 {
+    display: none;
 }
 
 .offer {
-    min-height: 230px;
+    margin-bottom: 40px;
 }
 
 .raspFree {
     width: 560px;
     heigth: 230px;
     float: left;
-    margin-bottom: 40px;
+    background-color: pink;
 
 }
 
@@ -81,40 +148,107 @@ font-family: "Roboto", Arial, sans-serif;
     width: 560px;
     heigth: 230px;
     float: right;
-    margin-bottom: 40px;
-
+    background-color: pink;
 }
 
+
 .iceCreamHits {
-    min-height: 330px;
     margin-bottom: 40px;
+    font-size: 0px;
+}
+
+.catalogItems {
+    font-size: 0px;
 }
 
 .iceCream {
     width: 267px;
-    margin-right: 26px;
-    float: left;
-    
+    margin-right: 19px;
+    margin-bottom: 40px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+
 }
 
-.iceCream.hitFour {
-    float:right;
-    margin-right: 0px;
+.iceCream.zeroMarginRight {
+    margin-right: 0;
 }
 
 .compAdvantages {
-    min-height: 307px;
+    padding: 30px 20px;
+    background-color: orange;
+    margin-bottom: 0;
 }
 
+.advantagesList {
+    list-style: none;
+}
 
+.advantages {
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+}
 
+.blog {
+    width: 560px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 40px;
+}
+
+.subscribe{
+    width: 560px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 40px;
+}
+
+.contacts {
+    height: 430px;
+    margin-bottom: 37px;
+}
+
+.contact_info {
+    width: 303px;
+    display: none;
+}
+
+.contactForm {
+    display: none;
+}
+
+.socialButtons {
+    width: 190px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 210px;
+}
+
+.links {
+    width: 330px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 210px;
+}
+
+.copyright {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
 
 /* Hovers */
-
-.mainNavigation .menu > li {
-    display: inline;
-    margin-right: 30px;
+.menu {
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.menu > li {
+    display: inline-block;
+    margin-right: 30px;
 }
 
 .menu .dropdown {
