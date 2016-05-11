@@ -74,6 +74,16 @@ h2 {
     text-align: right;
 }
 
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
 .filterSort {
     width: 195px;
     display: inline-block;
@@ -219,25 +229,42 @@ h2 {
     display: none;
 }
 
-.socialButtons {
-    width: 190px;
+.pagesNumber {
+    list-style: none;
+    float: right;
+}
+
+.pagesNumber li {
     display: inline-block;
     vertical-align: top;
+}
+
+.socialButtons {
+    width: 190px;
     margin-right: 210px;
+    float: left;
+    font-size: 0;
+}
+
+.socialBtn {
+    margin-right: 10px;
 }
 
 .links {
-    width: 330px;
-    display: inline-block;
-    vertical-align: top;
+    width: 320px;
     margin-right: 210px;
+    float: left;
 }
 
 .copyright {
     width: 200px;
-    display: inline-block;
-    vertical-align: top;
+    float: right;
 }
+
+.copyright p {
+    font-size: 12px;
+}
+
 
 /* Hovers */
 .menu {
