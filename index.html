@@ -65,12 +65,16 @@
 
                             <div class="account">
                                 <a class="userBlockBtn" href="#">Вход</a>
-                                <form class="enterHover" action="#" method="get">
-                                    <input type="text" name="email" placeholder="Электронная почта">
-                                    <input type="password" name="password" placeholder="Пароль">
-                                    <input type="submit" name="submit" value="Войти" id="submit">
-                                    <a href="#">Забыли пароль?</a>
-                                    <a href="#">Новая регистрация</a>
+                                <form class="enterForm" action="#" method="get">
+                                    <fieldset class="enterFormFieldset">
+                                        <input class="enterFormField" type="text" name="email" placeholder="Электронная почта">
+                                        <input class="enterFormField" type="password" name="password" placeholder="Пароль">
+                                        <input class="enterFormBtn btn" type="submit" name="submit" value="Войти" id="submit">
+                                        <div class="passReg">
+                                            <a class="enterFormLink" href="#">Забыли пароль?</a>
+                                            <a class="enterFormLink" href="#">Новая регистрация</a>
+                                        </div>
+                                    </fieldset>
                                 </form>
                             </div>
 
@@ -78,13 +82,13 @@
                             <div class="cart">
                                 <a class="userBlockBtn" href="#">Пусто</a>
 
-                                <div class="orderHover">
-                                    <table>
+                                <div class="orderSummary">
+                                    <table class="orderSummaryTable">
                                         <tr>
                                             <td><img src="img/x.png" alt="x" width="10" height="10"></td>
                                             <td><img src="img/icecream_orange_small.jpg" alt="" width="33" height="33"></td>
                                             <td>Пломбир с апельсиновым джемом</td>
-                                            <td>1,5 кг x <span class="gray">200 руб.</span></td>
+                                            <td>1,5 кг x <span class="orderPrice">200 руб.</span></td>
                                             <td>300 руб.</td>
                                         </tr>
 
@@ -92,12 +96,12 @@
                                             <td><img src="img/x.png" alt="x" width="10" height="10"></td>
                                             <td><img src="img/icecream_strawberry_small.jpg" alt="" width="33" height="33"></td>
                                             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                                            <td>1,5 кг x <span class="gray">300 руб.</span></td>
+                                            <td>1,5 кг x <span class="orderPrice">300 руб.</span></td>
                                             <td>450 руб.</td>
                                         </tr>
                                     </table>
                                     <div class="sum"> Итого: 750 руб.</div>
-                                    <button class="btn"><a href="#">Оформить заказ</a></button>
+                                    <button class="orderSubmit btn"><a href="#">Оформить заказ</a></button>
                                 </div>
                             </div>
                             <div class="openTimePhone">с 10 до 20, ежедневно<br>
@@ -137,14 +141,16 @@
                         <section class="offerItem offerItem-raspFree">
                             <div class="offerTitle">Малинка даром!</div>
                             <div class="offerText">
-                                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
+                                варенья бесплатно.</p>
                             </div>
                             <a href="#" class="offerBtn">Хочу варенье!</a>
                         </section>
                         <section class="offerItem offerItem-chocoFree">
                             <h2 class="offerTitle">Шоколадки даром!</h2>
                             <div class="offerText">
-                                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
+                                присыпки совершенно бесплатно.</p>
                             </div>
                             <a href="#" class="offerBtn">Хочу шоколадки!</a>
                         </section>
@@ -217,84 +223,96 @@
                         </ul>
                     </section>
 
-                    <div class="blog">
-                        <h2>Новое в нашем блоге</h2>
-                        <a href="#" class="blogTitle">10  способов сервировки фруктовых щербетов к столу</a>
-                    </div>
-
-                    <div class="subscribe">
-                        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
-                        происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
-
-                        <form>
-                            <input id="e-mail" type="text" name="e-mail"value="Электронная почта">
-                            <input id="submit" type="submit" name="submit" value="Отправить">
-                        </form>
-                    </div>
-
-                    <section class="contacts">
-
-                        <img src="img/map.jpg" alt="map" width="1200" height="430">
-
-                        <div class="contact_info">
-                            <p>Адрес главного офиса и офлайн магазина: <br>
-                            <span class="bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</span><br>
-                            Для заказов по телефону:<br>
-                            <span class="bold">8 812 450-25-25</span><br>
-                            (с 10 до 20 ежедневно) </p>
-                            <a class="form" href="#">Форма обратной связи</a>
+                    <div class="blogSubscribe">
+                        <div class="blog">
+                            <h2 class="blogTitle">Новое в нашем блоге</h2>
+                            <a href="#" class="blogLink">10 &nbspспособов сервировки фруктовых щербетов<br> к столу</a>
                         </div>
 
-                        <form class="contactForm" action="https://echo.htmlacademy.ru" method="get">
-                            <p>Мы обязательно вам ответим!</p>
-                            <input type="text" name="contactForm" id="name" value="Как вас зовут?">
-                            <input type="text" name="contactForm" id="email" value="Ваша почта для ответа?">
-                            <input type="text" name="contactForm" id="message" value="Напишите что-нибудь?">
-                            <input type="submit" name="contactForm" id="submit" value="Отправить">
-                        </form>
+                        <div class="subscribe">
+                            <p class="subscribeText">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+                            самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной
+                            ерунды. Честно =) </p>
 
-                    </section>
+                            <form class="subscribeForm">
+                                <input id="e-mail" class="subscribeFormField" type="text" name="e-mail" placeholder="Электронная почта">
+                                <input id="submit" class="subscribeBtn" type="submit" name="submit" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
 
                 </main>
 
-                <footer class="mainFooter">
-                    <div class="container">
-
-                        <div class="socialButtons">
-
-                            <a href="#" class="socialBtn socialBtnTwitter">
-                                <img src="img/twitter_icon.svg" alt="twitter_icon" width="31" height="31">
-                            </a>
-                            <a href="#" class="socialBtn socialBtnIsta">
-                                <img src="img/insta_icon.svg" alt="insta_icon" width="31" height="31">
-                            </a>
-                            <a href="#" class="socialBtn social-btn-fb">
-                                <img src="img/fb_icon.svg" alt="fb_icon" width="31" height="31">
-                            </a>
-                            <a href="#" class="socialBtn socialBtnVk">
-                                <img src="img/vk_icon.svg" alt="vk_icon" width="31" height="31">
-                            </a>
-                        </div>
-
-                        <div class="links">
-                            <a href="#">Для поставщиков</a>
-                            <a href="#">Наши документы</a>
-                            <a href="#">О производстве</a>
-                            <a href="#">Экологические стандарты</a>
-                        </div>
-
-                        <div class="copyright">
-                            <a href="htmlacademy.ru">
-                                <img src="img/htmlacademy_logo.svg" alt="academy_logo" width="108" height="37">
-                            </a>
-                            <p>
-                                Сделано в <a href="htmlacademy.ru">HTML Academy</a> © 2016
-                            </p>
-                        </div>
-
-                    </div>
-                </footer>
             </div>
+
+            <section class="contacts">
+
+                <img src="img/map.jpg" alt="map" width="1200" height="430">
+
+                <div class="contact_info">
+                    <p>Адрес главного офиса и<br> офлайн магазина:<br>
+                    <span class="importantInfo margin">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+                    <p>Для заказов по телефону:</p>
+                    <p><span class="importantInfo">8 812 450-25-25</span><br>(с 10 до 20 ежедневно) </p>
+                    <a class="form btn" href="#">Форма обратной связи</a>
+                </div>
+
+                <form class="contactForm" action="https://echo.htmlacademy.ru" method="get">
+                    <fieldset class="contactFormFieldset">
+                        <p class="formTitle">Мы обязательно вам ответим!</p>
+                        <p><input class="contactFormField" type="text" name="contactForm" id="name"
+                        placeholder="Как вас зовут?"></p>
+                        <p><input class="contactFormField" type="text" name="contactForm" id="email"
+                        placeholder="Ваша почта для ответа?"></p>
+                        <p><textarea class="contactFormField contactFormMessage" type="text" name="contactForm" rows="6"
+                        id="message" placeholder="Напишите что-нибудь..."></textarea></p>
+                        <p class="formSubmit"><input class="contactFormSubmit btn" type="submit" name="contactForm"
+                        id="submit" placeholder="Отправить"></p>
+                    </fieldset>
+                </form>
+
+            </section>
+
+
+
+            <footer class="mainFooter clearfix">
+                <div class="container">
+
+                    <div class="socialButtons">
+
+                        <a href="#" class="socialBtn socialBtnTwitter">
+
+                        </a>
+                        <a href="#" class="socialBtn socialBtnInsta">
+
+                        </a>
+                        <a href="#" class="socialBtn socialBtnFb">
+
+                        </a>
+                        <a href="#" class="socialBtn socialBtnVk">
+
+                        </a>
+                    </div>
+
+                    <div class="links">
+                        <a class="footerLink forSuppliers" href="#">Для поставщиков</a>
+                        <a class="footerLink docs" href="#">Наши документы</a>
+                        <a class="footerLink aboutProduction" href="#">О производстве</a>
+                        <a class="footerLink standards" href="#">Экологические стандарты</a>
+                    </div>
+
+                    <div class="copyright">
+                        <a href="htmlacademy.ru">
+                            <img src="img/htmlacademy_logo.svg" alt="academy_logo" width="108" height="37">
+                        </a>
+                        <p>
+                            Сделано в <a class="academy"href="htmlacademy.ru">HTML Academy</a> © 2016
+                        </p>
+                    </div>
+
+                </div>
+            </footer>
+
         </div>
     </body>
 </html>
