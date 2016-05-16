@@ -20,8 +20,8 @@
 
                     <nav class="mainNavigation">
                         <ul class="menu">
-                            <li class="menuItem">
-                                <a class="menuActive" href="#">Каталог</a>
+                            <li class="menuItem menuActive">
+                                <a href="#">Каталог</a>
                                 <div class="subMenu">
                                     <ul>
                                         <li>
@@ -148,7 +148,7 @@
                         <div class="filterTitle">
                             Сортировка:
                         </div>
-                        <select class="filterBackgorund" name="sort">
+                        <select class="filterSelect" name="sort">
                             <option value="popularity">по популярности</option>
                             <option value="price">сначала недорогие</option>
                             <option value="price">сначала дорогие</option>
@@ -185,7 +185,7 @@
 
                     <div class="filterFillings">
                         <div class="filterTitle">Наполнители:</div>
-                        <div class="fillings filterBackgorund">
+                        <div class="formControls filterBackgorund">
                             <input type="checkbox" name="fillings" id="choco" checked>
                             <label for="choco">шоколадные</label>
 
@@ -209,101 +209,136 @@
 
                 <div class="catalogItems">
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_orange.png" alt="" width="267" height="267">
-                        </a>
-                        <div class="iceCreamPrice">310 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_orange.png" alt="creamOrange" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">310 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_coffee.png" alt="creamCoffee" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">380 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочно-кофейное с кусочками шоколада</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_coffee.png" alt="creamCoffee" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">380 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочно-кофейное с кусочками шоколада</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_strawberry.png" alt="creamStrawberry" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">355 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_strawberry.png" alt="creamStrawberry" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">355 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_caramel.png" alt="creamBrulle" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">415 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочное крем-брюле с карамельной подливкой</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_caramel.png" alt="creamBrulle" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">415 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочное крем-брюле с карамельной подливкой</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_bilberry.png" alt="creamBiberry" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">325 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочное с брусничным джемом</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_orange.png" alt="creamOrange" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">310 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_blueberry.png" alt="creamBlueberry" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">410 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочно-черничное с цельными ягодами черники</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_coffee.png" alt="creamCoffee" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">380 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочно-кофейное с кусочками шоколада</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_lemon.png" alt="creamLemon" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">375 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочно-лимонное с карамельной присыпкой</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_strawberry.png" alt="creamStrawberry" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">355 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_cream.png" alt="cream" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">320 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочное с шоколадной стружкой</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_caramel.png" alt="creamBrulle" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">415 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочное крем-брюле с карамельной подливкой</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_vanilla.png" alt="creamVanilla" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">440 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочно-ванильное с кусочками шоколада</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_orange.png" alt="creamOrange" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">310 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_mentol.png" alt="creamMentol" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">435 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочное с ментоловым сиропом</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_coffee.png" alt="creamCoffee" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">380 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочно-кофейное с кусочками шоколада</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_creamdarkchoco.png" alt="creamDarkchoco" width="267px"height="267px">
-                        </a>
-                        <div class="iceCreamPrice">355 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочное с кусочками черного шоколада</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_strawberry.png" alt="creamStrawberry" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">355 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
 
                     <div class="iceCream">
-                        <a href="#">
-                            <img src="img/icecream_mint.png" alt="creamMint" width="267px" height="267px">
-                        </a>
-                        <div class="iceCreamPrice">420 &#8381;/<span class="iceCreamKg">кг</span></div>
-                        <a href="#" class="iceCreamTitle">Сливочное с мятным сиропом</a>
+                        <div class="iceCreamContent">
+                            <a href="#">
+                                <img src="img/icecream_caramel.png" alt="creamBrulle" width="267" height="267">
+                            </a>
+                            <div class="iceCreamPrice">415 &#8381;/<span class="iceCreamKg">кг</span></div>
+                            <a href="#" class="iceCreamTitle">Сливочное крем-брюле с карамельной подливкой</a>
+                            <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
+                        </div>
                     </div>
-
                 </div>
 
                 <div class="pagination clearfix">
