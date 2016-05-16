@@ -510,13 +510,17 @@ h2 {
             position: absolute;
             right: 0;
             top: 30px;
-
+            display: none;
         }
 
             .orderSummaryTable {
                 color: #323232;
                 font-size: 13px;
                 line-height: 16px;
+                border-bottom: 1px solid #cacac7;
+                border-spacing: 0;
+                font-weight: normal;
+                text-align: left;
                 position: relative;
                 z-index: 2;
             }
@@ -525,6 +529,11 @@ h2 {
                 height: 40px;
                 margin-bottom: 13px;
             }
+
+            .orderSummaryTable td {
+                padding-bottom: 20px;
+            }
+
             .x {
                 width: 27px;
                 background: url("../img/x_cart.png") no-repeat 6px 11px;
@@ -534,26 +543,59 @@ h2 {
             .iceIcon {
                 width: 33px;
                 height: 33px;
-                border-radius: 50%;
-                margin-right: 14px;
+            }
+
+            .orangeSmall {
+                background: url("../img/icecream_orange_small.png") no-repeat;
+            }
+
+            .strawberrySmall {
+                background: url("../img/icecream_strawberry_small.png") no-repeat;
+            }
+
+            .orderItem {
+                width: 217px;
+                padding: 0;
+                padding-left: 14px;
+                padding-right: 32px;
+            }
+
+            .orderLong {
+                vertical-align: bottom;
+            }
+
+            .orderCalcLong {
+                vertical-align: top;
+                padding-top: 8px;
+            }
+
+            .orderPriceLong {
+                vertical-align: top;
+                padding-top: 8px;
+            }
+
+            .itemPrice {
+                color: #999999;
             }
 
             .orderPrice {
-                color: #999999;
-
+                padding-left: 10px;
             }
 
             .orderSum {
                 color: #333333;
                 font-size: 15px;
                 line-height: 18px;
+                padding-top: 15px;
+
             }
+
 
         .orderSubmit {
             font-size: 18px;
             line-height: 24px;
             padding: 10px 15px;
-            margin-right: 17px;
+            margin-top: 14px;
         }
 
 
@@ -578,7 +620,11 @@ h2 {
 .breadcrumbs li {
     display: inline-block;
     vertical-align: top;
+}
 
+.filter {
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .filterSort {
@@ -1213,42 +1259,16 @@ h2 {
     position: relative;
 }
 
-.forSuppliers::before,
-.docs::before,
-.aboutProduction::before,
-.standards:before {
+.forSuppliers::before {
     content: "";
     width: 15px;
     height: 15px;
     background-image: url("../img/heart_icon.svg");
     background-repeat: no-repeat;
     position: absolute;
-    left: -17px;
+    left: -20px;
     top: 4px;
-    display: none;
 }
-
-.footerLink:hover {
-    font-weight: bold;
-}
-
-.forSuppliers:hover .forSuppliers::before {
-    display:block;
-}
-
-.docs:hover .docs::before {
-    display:block;
-}
-
-.aboutProduction:hover .aboutProduction::before {
-    display:block;
-}
-
-.standards:hover .standards::before {
-    display:block;
-}
-
-
 
 
 .copyright {
@@ -1273,45 +1293,4 @@ h2 {
 
 .academy {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-
-/* Hovers */
-
-
-
-.menu li > a {
-    display: block;
-}
-
-.menu .dropdown {
-    display: none;
-}
-
-.menu > li:hover .dropdown {
-    display: inline;
-}
-
-.userBlock .searchHover {
-    display: none;
-}
-
-.userBlock .search:hover .searchHover {
-    display: block;
-}
-
-.account .enterHover{
-    display: none;
-}
-
-.account .userBockBtn:hover .enterHover {
-    display: block;
-}
-
-.cart .orderHover {
-    display: none;
-}
-
-.cart .userBlockCart:hover .orderHover {
-    display:block;
 }
