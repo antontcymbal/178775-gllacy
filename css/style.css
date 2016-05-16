@@ -488,9 +488,6 @@ h2 {
                     font-size: 13px;
                 }
 
-
-
-
     .cart {
         display: inline-block;
         vertical-align: top;
@@ -500,21 +497,17 @@ h2 {
     }
 
     .cartButton {
-        padding: 4px 34px 5px 45px;
+        padding: 4px 15px 5px 43px;
         background-position: 16px 6px;
         background-repeat: no-repeat;
-    }
-
-    .cartEmpty {
         background-image: url('../img/cart_icon.svg');
     }
 
-    .cartFull {
+
+    .cart:hover .cartButton {
         background-image: url('../img/cart_icon_black.svg');
         color: #323232;
         background-color: #f8f7f4;
-        padding-right: 15px;
-        padding-left: 43px;
     }
 
     .cart:hover .orderSummary {
