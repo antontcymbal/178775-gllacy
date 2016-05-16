@@ -37,18 +37,18 @@ h2 {
                 background-color 0.5s ease;
 }
 
-.site-wrapper:before,
-.site-wrapper:after {
+.siteWrapper:before,
+.siteWrapper:after {
     content: "";
     visibility: hidden;
 }
 
-.site-wrapper:before,
-.site-wrapper:after {
+.siteWrapper:before,
+.siteWrapper:after {
     background-image: url("../img/slide2.png");
 }
 
-.site-wrapper:after {
+.siteWrapper:after {
     background-image: url("../img/slide3.png");
 }
 
@@ -121,10 +121,10 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
-  background: #f26843;
   background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  background: #f26843;
   border-radius: 100px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
@@ -181,6 +181,7 @@ h2 {
     .mainLogo {
         float: left;
         width: 153px;
+        line-height: 0px;
     }
 
     .mainNavigation {
@@ -224,6 +225,12 @@ h2 {
 
             .menuItem:hover .subMenu {
                 display: block;
+            }
+
+            .menuActive {
+                background: #f26843;
+                border-radius: 15px;
+                padding: 5px 12px;
             }
 
             .subMenu {
@@ -291,7 +298,6 @@ h2 {
 .userBlock {
     float: right;
     margin-top: 13px;
-    margin-bottom: 20px;
     font-size: 0;
     text-align: right;
 }
@@ -494,6 +500,8 @@ h2 {
         background-image: url('../img/cart_icon_black.svg');
         color: #323232;
         background-color: #f8f7f4;
+        padding-right: 15px;
+        padding-left: 43px;
     }
 
     .cart:hover .orderSummary {
@@ -598,88 +606,210 @@ h2 {
             margin-top: 14px;
         }
 
-
-.openTimePhone {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: bold;
+.upperBlock {
 
 }
 
-.phone {
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: bold;
-}
+    .breadcrumbs {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: normal;
+        float: left;
+    }
 
+        .breadcrumbs a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
 
-.breadcrumbs {
-    list-style: none;
-}
+            .breadcrumbs .active {
+                box-shadow: none;
+            }
 
-.breadcrumbs li {
-    display: inline-block;
-    vertical-align: top;
+        .breadcrumbs li {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            padding-top: 25px;
+            margin-right: 2px;
+        }
+
+    .openTimePhone {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: bold;
+        text-align: right;
+        float: right;
+    }
+
+    .phone {
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: bold;
+    }
+.mainCatalogueTitle {
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    margin-bottom: 27px;
 }
 
 .filter {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 0;
 }
 
-.filterSort {
-    width: 195px;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 20px;
+    .filterTitle {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 9px;
+        padding-left: 15px;
+    }
 
-}
 
-.filterPrice {
-    width: 220px;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 20px;
-}
+    .filterBackgorund {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 18px;
+        margin: 0;
+        padding: 0;
+        padding: 5px 15px;
+        color: #ffffff;
+        text-decoration: none;
+    }
 
-.filterFat {
-    width: 420px;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 20px;
-}
+    .filterSort {
+        width: 195px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
 
-.filterFat input {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-}
+    .filterPrice {
+        width: 220px;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
 
-.filterFillings {
-    width: 705px;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 40px;
-}
+    .formSlider {
+        padding: 16px;
+        position: relative;
+    }
 
-.filterFillings input {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-}
+        .scale {
+            background-color: #d1dad3;
+            height: 4px;
+            padding-left: 15px;
+            padding-right: 15px;
 
-.filterBtn {
-    width: 145px;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 40px;
-}
+        }
+
+            .bar {
+                background-color: #f8f7f4;
+                height: 4px;
+                width: 90px;
+                margin-left: 20px;
+            }
+
+        .toggle {
+            position: absolute;
+            background-color: #f8f7f4;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+        }
+
+            .toggleMin {
+                left: 35px;
+                top: 8px;
+            }
+
+            .toggleMax {
+                left: 132px;
+                top: 8px;
+            }
+
+    .filterFat {
+        width: 420px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+
+    .filterFat input {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+    }
+
+    .filterFillings {
+        width: 705px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        margin-right: 10px;
+    }
+
+    .filterFillings input {
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+    .filterBtn {
+        width: 144px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 16px;
+        line-height: 18px;
+        background-color: rgba(255, 255, 255, 0.2);
+        background-image:url("../img/filter_button_border.png");
+        color: #ffffff;
+        border-radius: 18px;
+        margin: 0;
+        padding: 0;
+        padding: 9px 17px;
+        border: none;
+    }
+
+    .filterBtn:hover {
+        color: #323232;
+        background-color: #f8f7f4;
+    }
+
+    .filterBtn:active {
+      background-color: rgb(237, 237, 237);
+      box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+      background-image: none;
+    }
 
 
 .offer {
     font-size: 0;
     padding: 0 0 14px;
 }
+
     .offerItem {
         background-color: #000;
         border-radius: 10px;
@@ -785,6 +915,10 @@ h2 {
     position: relative;
 }
 
+.iceCream:nth-child(4n) {
+    margin-right: 0;
+}
+
 .iceCream:hover {
 
   border-radius: 5px;
@@ -822,7 +956,9 @@ h2 {
     font-size: 45px;
 }
 
-
+.iceCreamKg {
+    font-size: 30px;
+}
 
 .hitIcon {
     position: absolute;
@@ -1096,33 +1232,33 @@ h2 {
     display: none;
 }
 
-.contactFormFieldset::after {
-    content: "";
-    position: absolute;
-    width: 17px;
-    height: 17px;
-    top: 10px;
-    right: 20px;
-    background-image: url("../img/x_form.png");
-    background-repeat: no-repeat;
-}
+    .contactFormFieldset::after {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        top: 10px;
+        right: 20px;
+        background-image: url("../img/x_form.png");
+        background-repeat: no-repeat;
+    }
 
-.formTitle {
-    font-size: 24px;
-    line-height: 28px;
-    margin: 0;
-}
+    .formTitle {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0;
+    }
 
-.contactFormFieldset {
-    border-radius: 6px;
-    background-color: rgb(248, 247, 244);
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-    padding: 20px 15px;
-    margin-top: 7px;
-    width: 311px;
-    z-index: 1;
-    position: relative;
-}
+    .contactFormFieldset {
+        border-radius: 6px;
+        background-color: rgb(248, 247, 244);
+        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+        padding: 20px 15px;
+        margin-top: 7px;
+        width: 311px;
+        z-index: 1;
+        position: relative;
+    }
     .contactFormField {
         background: #fff;
         border: 1px solid rgb(211, 211, 210);
@@ -1146,35 +1282,75 @@ h2 {
         color: #999;
     }
 
-.contactFormMessage {
-    width: 425px;
-    height: 150px;
-    padding-top: 10px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-}
+    .contactFormMessage {
+        width: 425px;
+        height: 150px;
+        padding-top: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: normal;
+    }
 
-.contactFormSubmit.btn {
-    border: none;
-    font-size: 18px;
-    line-height: 24px;
-    padding: 9px 25px 15px 28px;
-}
+    .contactFormSubmit.btn {
+        border: none;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 9px 25px 15px 28px;
+    }
 
-.formSubmit {
-    margin: 0;
-}
+    .formSubmit {
+        margin: 0;
+    }
 
 .pagesNumber {
     list-style: none;
+    margin: 0;
     float: right;
 }
 
-.pagesNumber li {
-    display: inline-block;
-    vertical-align: top;
-}
+    .pagesNumber li {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 5px;
+    }
+
+    .pagesNumber a {
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 8px;
+    }
+
+    .arrowLeft {
+        opacity: 0.2;
+    }
+
+    .pageNumber {
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+    }
+
+    .pageNumber:hover {
+        background: #a9bbb1 50% 50%;
+    }
+
+    .pageNumber:active {
+        background-color: #f8f7f4;
+    }
+
+    .pageNumber:active a {
+        color: #323232;
+    }
+
+
+
+    .footerLine {
+        height: 1px;
+        width: 1146px;
+        background-color: #a9bbb1;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
 
 /*footer*/
 
@@ -1201,6 +1377,7 @@ h2 {
         background-image: url("../img/twitter_icon.svg");
         border: 3px solid #b2c2b9;
         border-radius: 50%;
+        opacity: 0.8;
     }
 
     .socialBtnInsta {
@@ -1209,6 +1386,7 @@ h2 {
         background-image: url("../img/insta_icon.svg");
         border: 3px solid #b2c2b9;
         border-radius: 50%;
+        opacity: 0.8;
     }
 
     .socialBtnFb {
@@ -1217,6 +1395,7 @@ h2 {
         background-image: url("../img/fb_icon.svg");
         border: 3px solid #b2c2b9;
         border-radius: 50%;
+        opacity: 0.8;
     }
 
     .socialBtnVk {
@@ -1225,6 +1404,51 @@ h2 {
         background-image: url("../img/vk_icon.svg");
         border: 3px solid #b2c2b9;
         border-radius: 50%;
+        opacity: 0.8;
+    }
+
+    .socialBtnTwitter:hover {
+        opacity: 1;
+        border-color: #dbe3de;
+    }
+
+    .socialBtnInsta:hover {
+        opacity: 1;
+        border-color: #dbe3de;
+    }
+
+    .socialBtnFb:hover {
+        opacity: 1;
+        border-color: #dbe3de;
+    }
+
+    .socialBtnVk:hover {
+        opacity: 1;
+        border-color: #dbe3de;
+    }
+
+    .socialBtnTwitter:active {
+        opacity: 1;
+        border-color: #d9e1dd;
+        box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 0.5);
+    }
+
+    .socialBtnInsta:active {
+        opacity: 1;
+        border-color: #d9e1dd;
+        box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 0.5);
+    }
+
+    .socialBtnFb:active {
+        opacity: 1;
+        border-color: #d9e1dd;
+        box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 0.5);
+    }
+
+    .socialBtnVk:active {
+        opacity: 1;
+        border-color: #d9e1dd;
+        box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 0.5);
     }
 
 
