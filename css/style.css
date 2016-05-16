@@ -155,6 +155,10 @@ h2 {
   cursor: pointer;
 }
 
+.sliderControls label:hover {
+    background-color: #b2c1b7;
+}
+
 .sliderControls {
   position: absolute;
   bottom: 25px;
@@ -223,14 +227,21 @@ h2 {
                 border-bottom: 1px solid transparent;
             }
 
-            .menuItem:hover .subMenu {
-                display: block;
-            }
-
             .menuActive {
                 background: #f26843;
                 border-radius: 15px;
                 padding: 5px 12px;
+            }
+
+            .menuActive:hover {
+                background: #f8f7f4;
+                border-radius: 16px;
+            }
+
+
+
+            .menuItem:hover .subMenu {
+                display: block;
             }
 
             .subMenu {
@@ -1246,6 +1257,7 @@ h2 {
     .formTitle {
         font-size: 24px;
         line-height: 28px;
+        font-weight: 500;
         margin: 0;
     }
 
@@ -1296,6 +1308,7 @@ h2 {
         font-size: 18px;
         line-height: 24px;
         padding: 9px 25px 15px 28px;
+        float: right;
     }
 
     .formSubmit {
@@ -1451,6 +1464,37 @@ h2 {
         box-shadow: inset 0px 2px 1px 0px rgba(136, 136, 136, 0.5);
     }
 
+.linkWhite {
+    text-decoration: none;
+    color: #ffffff;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.linkWhite:hover {
+    color: #ffbc9e;
+    box-shadow: 0 1px 0 rgba(255, 188, 158, 0.2);
+}
+
+.linkWhite:active {
+    color: #ffbc9e;
+    box-shadow: 0 1px 0 rgba(255, 188, 158, 0.2);
+}
+
+.linkBlack {
+    text-decoration: none;
+    color: #323232;
+    box-shadow: 0 1px 0 rgba(50, 50, 50, 0.2);
+}
+
+.linkBlack:hover {
+    color: #e84d37;
+    box-shadow: 0 1px 0 rgba(232, 77, 55, 0.2);
+}
+
+.linkBlack:active {
+    color: #e84d37;
+    box-shadow: 0 1px 0 rgba(255, 77, 55, 0.2);
+}
 
 
 .links {
@@ -1460,28 +1504,22 @@ h2 {
 }
 
 .links a {
-    text-decoration: none;
-    color: #ffffff;
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
     display: inline-block;
     vertical-align: top;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .forSuppliers {
     margin-right: 30px;
-
+    position: relative;
 }
 
 .aboutProduction {
     margin-right: 41px;
 }
 
-.footerLink {
-    position: relative;
-}
 
 .forSuppliers::before {
     content: "";
@@ -1513,8 +1551,4 @@ h2 {
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
-}
-
-.academy {
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
