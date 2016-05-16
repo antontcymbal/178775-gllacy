@@ -107,16 +107,20 @@ h2 {
   line-height: 60px;
 }
 
-.slideBtn, .btn {
+.btn {
   display: inline-block;
   padding: 12px 50px;
   font-weight: 600;
   font-size: 31px;
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 41px;
   vertical-align: top;
   color: #ffffff;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  border: none;
+  outline: none;
+  cursor: pointer;
   background: #f26843;
   background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
@@ -125,14 +129,14 @@ h2 {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
 
-.slideBtn:hover, .btn:hover {
+.btn:hover {
   background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.slideBtn:active, .btn:active {
+.btn:active {
   background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
@@ -286,15 +290,17 @@ h2 {
 
 .userBlock {
     float: right;
-    width: 267px;
     margin-top: 13px;
     margin-bottom: 20px;
+    font-size: 0;
+    text-align: right;
 }
 
     .search {
         display: inline-block;
         vertical-align: top;
         position: relative;
+        font-size: 14px;
         margin-right: 10px;
     }
         .search:hover .searchIconText {
@@ -310,8 +316,9 @@ h2 {
             border-radius: 50%;
             display: block;
             text-align: center;
-            height: 30px;
-            width: 30px;
+            height: 31px;
+            width: 31px;
+            margin-right: 0;
         }
 
         .searchForm {
@@ -328,6 +335,7 @@ h2 {
             padding: 20px 15px;
             margin-top: 7px;
             width: 311px;
+            position: relative;
             z-index: 1;
         }
             .searchFormField {
@@ -339,7 +347,7 @@ h2 {
                 font-weight: 400;
                 box-sizing: border-box;
                 padding: 0 13px;
-                height: 42px;
+                height: 40px;
                 width: 100%;
             }
 
@@ -356,40 +364,42 @@ h2 {
     .account {
         display: inline-block;
         vertical-align: top;
-        margin-right: 10px;
-        width: 90px;
-        height: 30px;
         position: relative;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .account:hover .userBlockBtn {
+        color: #323232;
+        background-color: #f8f7f4;
+    }
+
+    .account:hover .entranceBtn {
+        background-image: url('../img/entrance_icon_black.svg');
+    }
+
+    .account:hover .enterForm{
+        display: block;
     }
 
         .userBlockBtn {
-            background: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.2);
             border-radius: 15px;
             display: block;
-            height: 32px;
-            width: 92px;
             font-weight: 500;
             font-size: 14px;
-            line-height: 16px;
+            margin: 0;
+            padding: 0;
+            padding: 4px 15px 5px 45px;
             color: #ffffff;
             text-decoration: none;
-            text-align: center;
+
         }
 
-        .account::before {
-            content: "";
-            position: absolute;
-            top: 6px;
-            left: 10px;
+        .entranceBtn {
             background-image: url('../img/entrance_icon.svg');
+            background-position: 16px 6px;
             background-repeat: no-repeat;
-            width: 30px;
-            height: 30px;
-
-        }
-
-        .userBlockBtn:hover .enterForm{
-            display: block;
         }
 
         .enterForm {
@@ -403,10 +413,11 @@ h2 {
                 border-radius: 6px;
                 background-color: rgb(248, 247, 244);
                 box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-                padding: 20px 15px;
+                padding: 20px 16px;
                 margin-top: 7px;
-                width: 260px;
-                z-index: 1;
+                width: 237px;
+                position: relative;
+                z-index: 2;
             }
                 .enterFormField {
                     background: #fff;
@@ -417,7 +428,7 @@ h2 {
                     font-weight: 400;
                     box-sizing: border-box;
                     padding: 0 13px;
-                    height: 42px;
+                    height: 43px;
                     width: 100%;
                     margin-bottom: 20px;
                 }
@@ -435,23 +446,27 @@ h2 {
                 .enterFormBtn {
                     font-size: 18px;
                     line-height: 24px;
-                    padding: 10px 15px;
-                    border: none;
-                    margin-right: 17px;
+                    padding: 10px 24px;
+                    margin-right: 9px;
                     display: inline-block;
                     vertical-align: top;
+                    text-align: left;
                 }
 
                 .passReg {
-                    width: 147px;
+                    width: 125px;
                     display: inline-block;
                     vertical-align: top;
+                    text-align: left;
                 }
 
                 .enterFormLink {
                     color: #323232;
                     display: inline-block;
                     vertical-align: top;
+                    margin: 0;
+                    padding: 0;
+                    font-size: 13px;
                 }
 
 
@@ -460,25 +475,33 @@ h2 {
     .cart {
         display: inline-block;
         vertical-align: top;
-        text-align: right;
-        line-height: 33px;
         margin-bottom: 20px;
         position: relative;
+        font-size: 14px;
     }
 
-        .cart::before {
-            content: "";
-            position: absolute;
-            top: 6px;
-            left: 10px;
-            background-image: url('../img/cart_icon.svg');
-            background-repeat: no-repeat;
-            width: 30px;
-            height: 30px;
-        }
+    .cartButton {
+        padding: 4px 34px 5px 45px;
+        background-position: 16px 6px;
+        background-repeat: no-repeat;
+    }
+
+    .cartEmpty {
+        background-image: url('../img/cart_icon.svg');
+    }
+
+    .cartFull {
+        background-image: url('../img/cart_icon_black.svg');
+        color: #323232;
+        background-color: #f8f7f4;
+    }
+
+    .cart:hover .orderSummary {
+        display: block;
+    }
 
         .orderSummary {
-            width: 540px;
+            width: 510px;
             border-radius: 6px;
             background-color: rgb(248, 247, 244);
             box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -487,18 +510,32 @@ h2 {
             position: absolute;
             right: 0;
             top: 30px;
-        }
 
-            .iceIcon {
-                width: 33px;
-                height: 33px;
-                border-radius: 50%;
-            }
+        }
 
             .orderSummaryTable {
                 color: #323232;
                 font-size: 13px;
                 line-height: 16px;
+                position: relative;
+                z-index: 2;
+            }
+
+            .orderSummaryTable tr {
+                height: 40px;
+                margin-bottom: 13px;
+            }
+            .x {
+                width: 27px;
+                background: url("../img/x_cart.png") no-repeat 6px 11px;
+                margin-right: 11px;
+            }
+
+            .iceIcon {
+                width: 33px;
+                height: 33px;
+                border-radius: 50%;
+                margin-right: 14px;
             }
 
             .orderPrice {
@@ -516,13 +553,11 @@ h2 {
             font-size: 18px;
             line-height: 24px;
             padding: 10px 15px;
-            border: none;
             margin-right: 17px;
         }
 
 
 .openTimePhone {
-    text-align: right;
     font-size: 14px;
     line-height: 16px;
     font-weight: bold;
