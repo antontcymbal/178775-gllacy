@@ -111,6 +111,7 @@ h2 {
 
 .btn {
   display: inline-block;
+  vertical-align: top;
   padding: 8px 44px;
   font-weight: 600;
   font-size: 32px;
@@ -152,6 +153,7 @@ h2 {
 
 .sliderControls label {
   display: inline-block;
+  vertical-align: top;
   width: 17px;
   height: 17px;
   margin-right: 8px;
@@ -1145,6 +1147,7 @@ h2 {
             color: #323232;
             margin: 0;
             display: inline-block;
+            vertical-align: top;
             width: 290px;
             font-weight: bold;
         }
@@ -1207,6 +1210,7 @@ h2 {
             .subscribeBtn {
                 border: none;
                 display: inline-block;
+                vertical-align: top;
                 padding: 8px 0 10px;
                 width: 128px;
                 font-weight: bold;
@@ -1481,6 +1485,7 @@ h2 {
     margin-right: 8px;
     position: relative;
     display: inline-block;
+    vertical-align: top;
 }
     .socialBtnTwitter {
         width: 31px;
