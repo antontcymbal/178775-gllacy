@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic,latin" rel="stylesheet" type="text/css">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -71,7 +71,7 @@
                                     <fieldset class="enterFormFieldset">
                                         <input class="enterFormField" type="text" name="email" placeholder="Электронная почта">
                                         <input class="enterFormField" type="password" name="password" placeholder="Пароль">
-                                        <input class="enterFormBtn btn" type="submit" name="submit" value="Войти" id="submit">
+                                        <input class="enterFormBtn btn" type="submit" name="submit" value="Войти" id="submitEnterForm">
                                         <div class="passReg">
                                             <a class="enterFormLink linkBlack" href="#">Забыли пароль?</a>
                                             <a class="enterFormLink linkBlack" href="#">Новая регистрация</a>
@@ -90,24 +90,24 @@
 
 
                 <main class="container">
-                    <div class="openTimePhone">с 10 до 20, ежедневно<br>
+                    <div class="openTimePhone">C 10 до 20, ежедневно<br>
                         <span class="phone">8 812 450-25-25</span>
                     </div>
 
                     <div class="slider">
                         <div class="slide" id="slide1">
                             <div class="slideTitle">Крем-брюле и пломбир с малиновым джемом</div>
-                            <a class="btn" href="#">Давайте оба!</a>
+                            <a class="btn slideBtn" href="#">Давайте оба!</a>
                         </div>
 
                         <div class="slide" id="slide2">
                             <div class="slideTitle">Шоколадный пломбир и лимонный сорбет</div>
-                            <a class="btn" href="#">Давайте оба!</a>
+                            <a class="btn slideBtn" href="#">Давайте оба!</a>
                         </div>
 
                         <div class="slide" id="slide3">
                             <div class="slideTitle">Пломбир с помадкой и клубничный щербет</div>
-                            <a class="btn" href="#">Давайте оба!</a>
+                            <a class="btn slideBtn" href="#">Давайте оба!</a>
                         </div>
 
 
@@ -125,7 +125,7 @@
                                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
                                 варенья бесплатно.</p>
                             </div>
-                            <a href="#" class="offerBtn">Хочу варенье!</a>
+                            <a href="#" class="btn offerBtn">Хочу варенье!</a>
                         </section>
                         <section class="offerItem offerItemChocoFree">
                             <h2 class="offerTitle">Шоколадки даром!</h2>
@@ -133,7 +133,7 @@
                                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной
                                 присыпки совершенно бесплатно.</p>
                             </div>
-                            <a href="#" class="offerBtn">Хочу шоколадки!</a>
+                            <a href="#" class="btn offerBtn choco">Хочу шоколадки!</a>
                         </section>
 
                     </div>
@@ -143,9 +143,9 @@
                         <div class="iceCream hit">
                             <div class="iceCreamContent">
                                 <a href="#">
-                                    <img src="img/icecream_orange.png" alt="creamOrange" width="267" height="267">
+                                    <img class="iceCreamImg" src="img/icecream_orange.png" alt="creamOrange" width="267" height="267">
                                 </a>
-                                <div class="iceCreamPrice">310 &#8381;/<span class="iceCreamKg">кг</span></div>
+                                <div class="iceCreamPrice">310<span class="iceCreamKg">/кг</span></div>
                                 <a href="#" class="iceCreamTitle">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                                 <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
                             </div>
@@ -154,9 +154,9 @@
                         <div class="iceCream hit">
                             <div class="iceCreamContent">
                                 <a href="#">
-                                    <img src="img/icecream_coffee.png" alt="creamCoffee" width="267" height="267">
+                                    <img class="iceCreamImg" src="img/icecream_coffee.png" alt="creamCoffee" width="267" height="267">
                                 </a>
-                                <div class="iceCreamPrice">380 &#8381;/<span class="iceCreamKg">кг</span></div>
+                                <div class="iceCreamPrice">380<span class="iceCreamKg">/кг</span></div>
                                 <a href="#" class="iceCreamTitle">Сливочно-кофейное с кусочками шоколада</a>
                                 <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
                             </div>
@@ -165,9 +165,9 @@
                         <div class="iceCream hit">
                             <div class="iceCreamContent">
                                 <a href="#">
-                                    <img src="img/icecream_strawberry.png" alt="creamStrawberry" width="267" height="267">
+                                    <img class="iceCreamImg" src="img/icecream_strawberry.png" alt="creamStrawberry" width="267" height="267">
                                 </a>
-                                <div class="iceCreamPrice">355 &#8381;/<span class="iceCreamKg">кг</span></div>
+                                <div class="iceCreamPrice">355<span class="iceCreamKg">/кг</span></div>
                                 <a href="#" class="iceCreamTitle">Сливочно-клубничное с присыпкой из белого шоколада</a>
                                 <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
                             </div>
@@ -176,9 +176,9 @@
                         <div class="iceCream hit">
                             <div class="iceCreamContent">
                                 <a href="#">
-                                    <img src="img/icecream_caramel.png" alt="creamBrulle" width="267" height="267">
+                                    <img class="iceCreamImg" src="img/icecream_caramel.png" alt="creamBrulle" width="267" height="267">
                                 </a>
-                                <div class="iceCreamPrice">415 &#8381;/<span class="iceCreamKg">кг</span></div>
+                                <div class="iceCreamPrice">415<span class="iceCreamKg">/кг</span></div>
                                 <a href="#" class="iceCreamTitle">Сливочное крем-брюле с карамельной подливкой</a>
                                 <a href="#" class="btn iceCreamBtn">Быстрый просмотр</a>
                             </div>
@@ -188,17 +188,17 @@
 
                     <section class="compAdvantages">
 
-                        <h2 class="advantagesTitle"> Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого
+                        <h2 class="advantagesTitle"> Магазин Глейси &nbsp;— это онлайн и офлайн магазин по продаже мороженого
                             собственного производства на развес</h2>
 
                         <ul class="advantagesList">
                             <li class="advantages iceCreamIcon">
-                                <p>Все наше мороженое изготавливается на собственном производстве,с использованием
+                                <p>Все наше мороженое изготавливается на собственном производстве, с использованием
                                 современного оборудования и проверенных временем технологий.</p>
                             </li>
 
                             <li class="advantages leafIcon">
-                                <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и
+                                <p>Закупка ингредиентов &nbsp;производится только у проверенных фермерских хозяйств и
                                 компаний, с которыми нас связывает долговременное сотрудничество. </p>
                             </li>
 
@@ -209,7 +209,7 @@
                             </li>
 
                             <li class="advantages thermometerIcon">
-                                <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+                                <p>Доставка нашего мороженого до заказчиков осуществляется<br>в специальном термопаке,
                                 который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный
                                 вкус. </p>
                             </li>
@@ -219,18 +219,20 @@
                     <div class="blogSubscribe">
                         <div class="blog">
                             <h2 class="blogTitle">Новое в нашем блоге</h2>
-                            <a href="#" class="blogLink">10 &nbspспособов сервировки фруктовых щербетов<br> к столу</a>
+                            <a href="#" class="blogLink">10 &nbsp;способов сервировки фруктовых щербетов<br> к столу</a>
                         </div>
 
-                        <div class="subscribe">
-                            <p class="subscribeText">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-                            самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной
-                            ерунды. Честно =) </p>
+                        <div class="subscribeWrapper">
+                            <div class="subscribe">
+                                <p class="subscribeText">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+                                самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной
+                                ерунды. Честно =) </p>
 
-                            <form class="subscribeForm">
-                                <input id="e-mail" class="subscribeFormField" type="text" name="e-mail" placeholder="Электронная почта">
-                                <input id="submit" class="subscribeBtn" type="submit" name="submit" value="Отправить">
-                            </form>
+                                <form class="subscribeForm">
+                                    <input id="e-mail" class="subscribeFormField" type="text" name="e-mail" placeholder="Электронная почта">
+                                    <input id="submitSubscribe" class="subscribeBtn" type="submit" name="submit" value="Отправить">
+                                </form>
+                            </div>
                         </div>
                     </div>
 
@@ -246,6 +248,7 @@
                     <p>Адрес главного офиса и<br> офлайн магазина:<br>
                     <span class="importantInfo margin">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
                     <p>Для заказов по телефону:</p>
+                    <div class="phoneOpen"></div>
                     <p><span class="importantInfo">8 812 450-25-25</span><br>(с 10 до 20 ежедневно) </p>
                     <a class="form btn" href="#">Форма обратной связи</a>
                 </div>
@@ -257,10 +260,10 @@
                         placeholder="Как вас зовут?"></p>
                         <p><input class="contactFormField" type="text" name="contactForm" id="email"
                         placeholder="Ваша почта для ответа?"></p>
-                        <p><textarea class="contactFormField contactFormMessage" type="text" name="contactForm" rows="6"
+                        <p><textarea class="contactFormField contactFormMessage" name="contactForm" rows="6"
                         id="message" placeholder="Напишите что-нибудь..."></textarea></p>
                         <p class="formSubmit"><input class="contactFormSubmit btn" type="submit" name="contactForm"
-                        id="submit" placeholder="Отправить"></p>
+                        id="submit" value="Отправить"></p>
                     </fieldset>
                 </form>
 
@@ -295,11 +298,10 @@
                         </div>
 
                         <div class="copyright">
-                            <a href="htmlacademy.ru">
-                                <img src="img/htmlacademy_logo.svg" alt="academy_logo" width="108" height="37">
-                            </a>
+
                             <p>
-                                Сделано в <a class="linkWhite" href="htmlacademy.ru">HTML Academy</a> © 2016
+                                Сделано в <a class="linkWhite" href="htmlacademy.ru"><span class="htmlAcademy">
+                                HTML Academy</span></a> © 2016
                             </p>
                         </div>
 

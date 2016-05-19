@@ -98,11 +98,13 @@ h2 {
   background-image: url("../img/slide3.png");
 }
 
+
 .slideTitle {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 34px;
-  font-weight: 800;
+  padding-top: 1px;
+  margin-bottom: 32px;
+  font-weight: 900;
   font-size: 60px;
   line-height: 60px;
 }
@@ -143,11 +145,17 @@ h2 {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
+.slideBtn {
+    padding: 8px 40px 12px;
+    border-radius: 30px;
+}
+
 .sliderControls label {
   display: inline-block;
   width: 17px;
   height: 17px;
   margin-right: 8px;
+  margin-top: 8px;
   vertical-align: top;
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -161,7 +169,7 @@ h2 {
 
 .sliderControls {
   position: absolute;
-  bottom: 25px;
+  bottom: 22px;
   left: 0;
   z-index: 20;
   font-size: 0;
@@ -282,7 +290,7 @@ h2 {
                         line-height: 28px;
                     }
                         .subMenuItemCategory::after {
-                            content: '';
+                            content: "";
                             display: block;
                             background: rgba(53, 53, 53, 0.2);
                             position: absolute;
@@ -311,7 +319,7 @@ h2 {
 
 .userBlock {
     float: right;
-    margin-top: 13px;
+    margin-top: 14px;
     font-size: 0;
     text-align: right;
 }
@@ -395,7 +403,7 @@ h2 {
     }
 
     .account:hover .entranceBtn {
-        background-image: url('../img/entrance_icon_black.svg');
+        background-image: url("../img/entrance_icon_black.svg");
     }
 
     .account:hover .enterForm{
@@ -417,7 +425,7 @@ h2 {
         }
 
         .entranceBtn {
-            background-image: url('../img/entrance_icon.svg');
+            background-image: url("../img/entrance_icon.svg");
             background-position: 16px 6px;
             background-repeat: no-repeat;
         }
@@ -498,15 +506,24 @@ h2 {
     }
 
     .cartButton {
-        padding: 4px 15px 5px 43px;
-        background-position: 16px 6px;
+        padding: 4px 16px 5px 42px;
+        background-position: 15px 6px;
         background-repeat: no-repeat;
-        background-image: url('../img/cart_icon.svg');
+        background-image: url("../img/cart_icon.svg");
+    }
+
+    .cartEmpty {
+        padding-left: 43px;
+        padding-right: 35px;
+    }
+
+    .cartFull {
+        padding-left: 44px;
     }
 
 
     .cart:hover .cartButton {
-        background-image: url('../img/cart_icon_black.svg');
+        background-image: url("../img/cart_icon_black.svg");
         color: #323232;
         background-color: #f8f7f4;
     }
@@ -620,6 +637,7 @@ h2 {
     .breadcrumbs {
         list-style: none;
         margin: 0;
+        margin-left: -2px;
         padding: 0;
         font-size: 14px;
         line-height: 16px;
@@ -645,7 +663,7 @@ h2 {
             vertical-align: top;
             font-size: 14px;
             padding-top: 25px;
-            margin-right: 2px;
+            margin-right: 4px;
         }
 
     .openTimePhone {
@@ -659,13 +677,16 @@ h2 {
     .phone {
         font-size: 22px;
         line-height: 24px;
-        font-weight: bold;
+        font-weight: 900;
+        display: block;
+
     }
 .mainCatalogueTitle {
     margin: 0;
     padding: 0;
     margin-top: 3px;
     margin-bottom: 27px;
+    margin-left: -2px;
 }
 
 .filter {
@@ -698,14 +719,14 @@ h2 {
     }
 
     .filterSort {
-        width: 195px;
+        width: 192px;
         display: inline-block;
         vertical-align: top;
         font-size: 16px;
         line-height: 18px;
         font-weight: 400;
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         margin-right: 10px;
     }
 
@@ -713,7 +734,7 @@ h2 {
         width: 220px;
         display: inline-block;
         vertical-align: top;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         margin-right: 10px;
     }
 
@@ -764,7 +785,7 @@ h2 {
         font-size: 16px;
         line-height: 18px;
         font-weight: 400;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         margin-right: 10px;
     }
 
@@ -825,7 +846,7 @@ h2 {
 
 .offer {
     font-size: 0;
-    padding: 0 0 14px;
+    padding: 0 0 4px;
 }
 
     .offerItem {
@@ -834,11 +855,11 @@ h2 {
         display: inline-block;
         vertical-align: top;
         font-size: 14px;
-        padding: 12px 20px 74px;
+        padding: 14px 20px 74px 19px;
         position: relative;
         margin-right: 26px;
-        margin-bottom: 26px;
-        margin-top: 7px;
+        margin-bottom: 38px;
+        margin-top: 1px;
         min-height: 140px;
         width: 520px;
     }
@@ -863,7 +884,7 @@ h2 {
             font-size: 35px;
             font-weight: bold;
             line-height: 41px;
-            margin: 0 0 18px;
+            margin: 0 0 16px;
             padding: 0;
         }
 
@@ -879,38 +900,24 @@ h2 {
 
         .offerBtn {
             display: inline-block;
-            padding: 10px 22px;
+            padding: 11px 21px;
             font-weight: 600;
             font-size: 18px;
             line-height: 24px;
             vertical-align: top;
-            color: #fff;
             position: absolute;
-            right: 23px;
+            right: 22px;
             bottom: 24px;
-            text-decoration: none;
-            text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-            background: #f26843;
-            background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-            background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-            background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-            border-radius: 100px;
-            box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
         }
 
-        .offerBtn:hover {
-            background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-            background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-            background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-            box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+        .choco {
+            padding: 0;
+            padding: 11px 21px;
+            margin-right: -2px;
         }
 
-        .offerBtn:active {
-            background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-            background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-            background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-            box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-        }
+
+
 
 .catalogItems,
 .iceCreamHits {
@@ -921,7 +928,7 @@ h2 {
 
 .iceCream {
     width: 287px;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -932,13 +939,13 @@ h2 {
 }
 
     .iceCreamContent {
-        padding: 12px 10px;
+        padding:0 10px 0;
         z-index: 1;
     }
 
     .iceCream.hit:before {
         background: url(../img/hit.png) no-repeat 0 0;
-        content: '';
+        content: "";
         position: absolute;
         top: 10px;
         left: 10px;
@@ -963,12 +970,19 @@ h2 {
         position: absolute;
     }
 
+
         .iceCreamTitle {
             color: #ffffff;
             font-weight: 400;
             text-align: center;
             text-decoration: none;
             box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            padding-top: 5px;
+
+        }
+
+        .iceCreamImg {
+            margin-bottom: 2px;
         }
 
         .iceCreamPrice {
@@ -976,12 +990,24 @@ h2 {
             font-size: 45px;
             font-weight: bold;
             text-align: left;
-            margin-top: -60px;
+            margin-top: -65px;
             margin-bottom: 15px;
             position: relative;
         }
             .iceCreamKg {
                 font-size: 30px;
+                margin-left: 35px;
+                position: relative;
+            }
+
+            .iceCreamKg::before {
+                content: "";
+                background-image: url("../img/p.png");
+                position:absolute;
+                right: 44px;
+                top: -1px;
+                width: 28px;
+                height: 33px;
             }
 
         .iceCreamBtn {
@@ -999,7 +1025,8 @@ h2 {
     position: relative;
     border-radius: 10px;
     margin-bottom: 40px;
-    margin-top: 9px;
+    padding-bottom: 4px;
+    padding-right: 7px;
 }
 
 .compAdvantages h2,
@@ -1014,12 +1041,15 @@ h2 {
     padding-left: 20px;
     margin-bottom: 24px;
     font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .compAdvantages p {
     margin-top: 0;
-    margin-bottom: 25px;
-    margin-left: 78px;
+    margin-bottom: 21px;
+    margin-left: 77px;
+    font-weight: normal;
 }
 
 .advantagesList {
@@ -1119,82 +1149,94 @@ h2 {
             font-weight: bold;
         }
 
-    .subscribe{
-        width: 510px;
+    .subscribeWrapper {
+        width: 550px;
+        background-color: white;
+        background: url("../img/post_pattern.jpg") repeat;
+        padding: 5px;
+        border-radius: 15px;
         display: inline-block;
         vertical-align: top;
-        font-size: 16px;
-        line-height: 22px;
-        background-color: #f8f7f4;
-        color: #5a5a5a;
-        border-image: url("../img/post_pattern.jpg") 4 round;
-        border-radius: 15px;
-        padding: 28px 20px 30px;
-
     }
 
-        .subscribeText {
-            margin: 0;
-            margin-bottom: 40px;
-        }
-
-
-        .subscribeFormField {
-            background: #fff;
-            border: 1px solid rgb(211, 211, 210);
-            border-radius: 5px;
-            color: #323232;
-            font-size: 16px;
-            font-weight: normal;
-            box-sizing: border-box;
-            padding: 0 13px;
-            height: 42px;
-            width: 365px;
-            margin-right: 6px;
-        }
-
-        .subscribeFormField::-webkit-input-placeholder {
-            color: #999;
-        }
-        .subscribeFormField::-moz-placeholder {
-            color: #999;
-        }
-        .subscribeFormField:-ms-input-placeholder {
-            color: #999;
-        }
-
-        .subscribeBtn {
-            border: none;
+        .subscribe{
+            width: 510px;
             display: inline-block;
-            padding: 9px 18px;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 24px;
             vertical-align: top;
-            color: #fff;
-            text-decoration: none;
-            text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-            background: #f26843;
-            background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-            background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-            background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-            border-radius: 100px;
-            box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+            font-size: 16px;
+            line-height: 22px;
+            background-color: #f8f7f4;
+            color: #5a5a5a;
+            border-radius: 15px;
+            padding: 28px 19px 34px 22px;
+
         }
 
-        .subscribeBtn:hover {
-          background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-          background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-          background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-          box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-        }
+            .subscribeText {
+                margin: 0;
+                margin-bottom: 37px;
+                font-weight: normal;
+            }
 
-        .subscribeBtn:active {
-          background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-          background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-          background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-          box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-        }
+
+            .subscribeFormField {
+                background: #fff;
+                border: 1px solid rgb(211, 211, 210);
+                border-radius: 5px;
+                color: #323232;
+                font-size: 16px;
+                font-weight: normal;
+                box-sizing: border-box;
+                padding: 0 13px 1px;
+                height: 44px;
+                width: 368px;
+                margin-right: 6px;
+            }
+
+
+            .subscribeFormField::-webkit-input-placeholder {
+                color: #999;
+            }
+            .subscribeFormField::-moz-placeholder {
+                color: #999;
+            }
+            .subscribeFormField:-ms-input-placeholder {
+                color: #999;
+            }
+
+            .subscribeBtn {
+                border: none;
+                display: inline-block;
+                padding: 8px 0 10px;
+                width: 128px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 24px;
+                vertical-align: top;
+                color: #fff;
+                text-decoration: none;
+                text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+                background: #f26843;
+                background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+                background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+                background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+                border-radius: 100px;
+                box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+            }
+
+            .subscribeBtn:hover {
+              background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+              background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+              background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+              box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+            }
+
+            .subscribeBtn:active {
+              background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+              background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+              background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+              box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+            }
 
 
 .contacts {
@@ -1246,11 +1288,15 @@ h2 {
     margin-bottom: 19px;
 }
 
+.phoneOpen {
+    margin-bottom: 4px;
+}
+
 .form.btn {
     font-size: 18px;
     line-height: 24px;
     padding: 9px 25px 15px 28px;
-    margin-top: 30px;
+    margin-top: 26px;
 
 }
 
@@ -1332,17 +1378,22 @@ h2 {
     .formSubmit {
         margin: 0;
     }
+.pagination {
+    position: relative;
+}
 
 .pagesNumber {
     list-style: none;
     margin: 0;
     float: right;
+    margin-top: 45px;
+    margin-right: 25px;
+
 }
 
     .pagesNumber li {
         display: inline-block;
         vertical-align: top;
-        margin-right: 5px;
     }
 
     .pagesNumber a {
@@ -1351,9 +1402,10 @@ h2 {
         margin-left: 8px;
     }
 
-    .arrowLeft {
-        opacity: 0.2;
+    .activePage {
+        background: #a9bbb1 50% 50%;
     }
+
 
     .pageNumber {
         border-radius: 50%;
@@ -1371,6 +1423,34 @@ h2 {
 
     .pageNumber:active a {
         color: #323232;
+    }
+
+    .ativePage {
+        position: relative;
+    }
+
+    .lastPage {
+        position: relative;
+    }
+
+    .activePage::before {
+        content: "";
+        width: 8px;
+        height: 14px;
+        background-image: url("../img/arrow_left_pagination.png");
+        position: absolute;
+        left: 957px;
+        bottom: 7px;
+    }
+
+    .lastPage::after {
+        content: "";
+        width: 8px;
+        height: 14px;
+        background-image: url("../img/arrow_right_pagination.png");
+        position: absolute;
+        bottom: 7px;
+        left: 41px;
     }
 
 
@@ -1516,7 +1596,7 @@ h2 {
 
 
 .links {
-    width: 320px;
+    width: 310px;
     margin-top: 12px;
     float: left;
 }
@@ -1530,12 +1610,12 @@ h2 {
 }
 
 .forSuppliers {
-    margin-right: 30px;
+    margin-right: 28px;
     position: relative;
 }
 
 .aboutProduction {
-    margin-right: 41px;
+    margin-right: 40px;
 }
 
 
@@ -1552,21 +1632,26 @@ h2 {
 
 
 .copyright {
-    width: 200px;
+    width: 210px;
     float: right;
-
+    margin-right: -11px;
+    background: url("../img/htmlacademy_logo.svg") no-repeat 13px 0;
+    height: 60px;
 }
 
 .copyright p {
     font-size: 12px;
+    font-weight: normal;
     margin: 0;
+    margin-top: 39px;
+    margin-left: 11px;
     line-height: 18px;
 }
 
 .copyright a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 18px;
     font-weight: normal;
 }
