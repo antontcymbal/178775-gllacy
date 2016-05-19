@@ -520,7 +520,12 @@ h2 {
     }
 
     .cartFull {
-        padding-left: 44px;
+        padding: 4px 16px 5px 44px;
+        background-position: 15px 6px;
+        background-repeat: no-repeat;
+        background-image: url("../img/cart_icon_full.png");
+        background-color: #f8f7f4;
+        color: #323232;
     }
 
 
@@ -949,7 +954,7 @@ h2 {
         background: url(../img/hit.png) no-repeat 0 0;
         content: "";
         position: absolute;
-        top: 10px;
+        top: -2px;
         left: 10px;
         height: 61px;
         width: 61px;
